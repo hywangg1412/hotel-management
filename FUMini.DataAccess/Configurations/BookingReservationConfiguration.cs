@@ -14,11 +14,6 @@ namespace FUMini.DataAccess.Configurations
             builder.HasOne(c => c.Customer)
                 .WithMany(br => br.BookingReservations)
                 .HasForeignKey(c => c.CustomerID);
-
-            // RoomReservation - BookingDetail
-            builder.HasMany(bd => bd.BookingDetails)
-                .WithOne(br => br.BookingReservation)
-                .HasForeignKey(bd => bd.BookingReservationID);
         }
     }
 }
