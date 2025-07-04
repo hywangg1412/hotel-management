@@ -21,10 +21,7 @@ namespace FUMini.BussinessObjects.Models
         // Navigation Collections
         public virtual IEnumerable<RoomInformation> RoomInformations { get; set; }
 
-        public RoomType()
-        {
-            RoomInformations = new HashSet<RoomInformation>();
-        }
+        public RoomType() { }
 
         public RoomType(int roomTypeID, string roomTypeName, string? typeDescription, string? typeNote)
         {

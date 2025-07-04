@@ -26,9 +26,7 @@ namespace FUMini.BussinessObjects.Models
         // Navigation Collections
         public virtual IEnumerable<BookingDetail> BookingDetails { get; set; }
 
-        public RoomInformation()
-        {
-        }
+        public RoomInformation() { }
 
         public RoomInformation(int roomId, string roomNumber, string? roomDetailDescription, int? roomMaxCapacity, int roomTypeID, byte? roomStatus, decimal? roomPricePerDay)
         {

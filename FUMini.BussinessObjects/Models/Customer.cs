@@ -31,9 +31,7 @@ namespace FUMini.BussinessObjects.Models
         // Navigation Collections
         public virtual IEnumerable<BookingReservation> BookingReservations { get; set; }
 
-        public Customer()
-        {
-        }
+        public Customer() { }
 
         public Customer(int customerID, string customerFullName, string telephone, string emailAddress, DateOnly? customerBirthday, byte? customerStatus, string password)
         {
