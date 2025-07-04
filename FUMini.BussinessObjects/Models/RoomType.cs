@@ -18,6 +18,7 @@ namespace FUMini.BussinessObjects.Models
 
         // Navigation Properties
 
+
         // Navigation Collections
         public virtual IEnumerable<RoomInformation> RoomInformations { get; set; }
 
@@ -29,8 +30,6 @@ namespace FUMini.BussinessObjects.Models
             RoomTypeName = roomTypeName;
             TypeDescription = typeDescription;
             TypeNote = typeNote;
-            RoomInformations = new HashSet<RoomInformation>();
         }
-
     }
 }
