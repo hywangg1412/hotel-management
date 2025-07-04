@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "L:\\Workspace\\C#\\hotel_management\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|l:\\workspace\\c#\\hotel_management\\fumini.bussinessobjects\\models\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|solutionrelative:fumini.bussinessobjects\\models\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|l:\\workspace\\c#\\hotel_management\\fumini.bussinessobjects\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|solutionrelative:fumini.bussinessobjects\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|l:\\workspace\\c#\\hotel_management\\fumini.bussinessobjects\\models\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|solutionrelative:fumini.bussinessobjects\\models\\roominformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|l:\\workspace\\c#\\hotel_management\\fumini.bussinessobjects\\models\\bookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|solutionrelative:fumini.bussinessobjects\\models\\bookingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|l:\\workspace\\c#\\hotel_management\\fumini.bussinessobjects\\models\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15A7FFCB-3085-4FA3-8763-A6B67BD23DFE}|FUMini.BussinessObjects\\FUMini.BussinessObjects.csproj|solutionrelative:fumini.bussinessobjects\\models\\bookingreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 257,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\RoomType.cs",
+              "RelativeDocumentMoniker": "FUMini.BussinessObjects\\Models\\RoomType.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\RoomType.cs",
+              "RelativeToolTip": "FUMini.BussinessObjects\\Models\\RoomType.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T03:05:13.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingReservation.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\BookingReservation.cs",
+              "RelativeDocumentMoniker": "FUMini.BussinessObjects\\Models\\BookingReservation.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\BookingReservation.cs",
+              "RelativeToolTip": "FUMini.BussinessObjects\\Models\\BookingReservation.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:59:17.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingDetail.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\BookingDetail.cs",
+              "RelativeDocumentMoniker": "FUMini.BussinessObjects\\Models\\BookingDetail.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\BookingDetail.cs",
+              "RelativeToolTip": "FUMini.BussinessObjects\\Models\\BookingDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:45:23.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoomInformation.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\RoomInformation.cs",
+              "RelativeDocumentMoniker": "FUMini.BussinessObjects\\Models\\RoomInformation.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\RoomInformation.cs",
+              "RelativeToolTip": "FUMini.BussinessObjects\\Models\\RoomInformation.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:31:00.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "FUMini.BussinessObjects\\Models\\Customer.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.BussinessObjects\\Models\\Customer.cs",
+              "RelativeToolTip": "FUMini.BussinessObjects\\Models\\Customer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T02:30:10.238Z",
+              "EditorCaption": ""
             }
           ]
         }
