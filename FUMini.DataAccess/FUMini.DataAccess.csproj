@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FUMini.BussinessObjects\FUMini.BussinessObjects.csproj" />
-    <ProjectReference Include="..\FUMini.Services\FUMini.Services.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,7 +13,7 @@ namespace FUMini.DataAccess.Context
         private string GetConnectionString()
         {
             IConfiguration configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
+                .SetBasePath(AppContext.BaseDirectory)
                 .AddJsonFile("appsettings.json")
                 .Build();
             return configuration.GetConnectionString("DefaultConnection");
