@@ -1,7 +1,4 @@
-﻿using FUMini.DataAccess.Context;
-using FUMini.DataAccess.Repositories.Implementation;
-using FUMini.DataAccess.Repositories.Interfaces;
-using FUMini.Services.Implementations;
+﻿using FUMini.BussinessObjects.Models;
 using FUMini.Services.Interfaces;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -14,13 +11,13 @@ namespace FUMini.UI.View
     public partial class LoginWindow : Window
     {
         private readonly ICustomerService _customerService;
+        private readonly AdminConfig _adminConfig;
 
-        public LoginWindow()
+        public LoginWindow(ICustomerService customerService, AdminConfig adminConfig)
         {
             InitializeComponent();
-            var context = new FUMiniContext();
-            ICustomerRepository customerRepository = new CustomerRepository(context);
-            _customerService = new CustomerService(customerRepository);
+            _customerService = customerService;
+            _adminConfig = adminConfig;
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -42,6 +39,15 @@ namespace FUMini.UI.View
                 return;
             }
 
+            // Check Admin Account
+            if (email == _adminConfig.Email && password == _adminConfig.Password)
+            {
+                MessageBox.Show("Hello Admin!");
+                var mainWindow = new MainWindow();
+                mainWindow.Show();
+                this.Close();
+            }
+
             var customer = _customerService.GetAll().FirstOrDefault(c => c.EmailAddress == email);
 
             if (customer == null)
@@ -58,8 +64,8 @@ namespace FUMini.UI.View
 
             MessageBox.Show($"Welcome {customer.CustomerFullName}!");
 
-            var mainWindow = new MainWindow();
-            mainWindow.Show();
+            var mainWindow2 = new MainWindow();
+            mainWindow2.Show();
             this.Close();
         }
 

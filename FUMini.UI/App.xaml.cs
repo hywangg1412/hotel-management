@@ -1,9 +1,11 @@
-﻿using FUMini.DataAccess.Repositories.Implementation;
+﻿using FUMini.BussinessObjects.Models;
+using FUMini.DataAccess.Context;
+using FUMini.DataAccess.Repositories.Implementation;
 using FUMini.DataAccess.Repositories.Interfaces;
 using FUMini.Services.Implementations;
 using FUMini.Services.Interfaces;
 using FUMini.UI.View;
-using FUMini.DataAccess.Context;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
 
@@ -11,7 +13,7 @@ namespace FUMini.UI
 {
     public partial class App : Application
     {
-        private IServiceProvider serviceProvider;
+        private readonly IServiceProvider serviceProvider;
 
         public App()
         {
@@ -22,6 +24,13 @@ namespace FUMini.UI
 
         private void ConfigureServices(ServiceCollection services)
         {
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .Build();
+
+            var adminConfig = configuration.GetSection("AdminAccount").Get<AdminConfig>();
+
             // DbContext
             services.AddDbContext<FUMiniContext>();
 
@@ -43,6 +52,9 @@ namespace FUMini.UI
             services.AddTransient<LoginWindow>();
             services.AddTransient<RegisterWindow>();
             services.AddTransient<MainWindow>();
+
+            // Admin Account
+            services.AddSingleton(adminConfig);
         }
 
         protected override void OnStartup(StartupEventArgs e)
