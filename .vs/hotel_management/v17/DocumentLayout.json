@@ -132,8 +132,7 @@
               "RelativeToolTip": "FUMini.UI\\View\\RegisterWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-06T03:59:13.264Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -144,11 +143,11 @@
               "DocumentIndex": 0,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\hyper\\AppData\\Local\\Temp\\.vsdbgsrc\\a09d3bec78e2ca81e81c6b450e121e745f00fac2af5d80c823de125bd4a3a72e\\App.xaml",
-              "ToolTip": "C:\\Users\\hyper\\AppData\\Local\\Temp\\.vsdbgsrc\\a09d3bec78e2ca81e81c6b450e121e745f00fac2af5d80c823de125bd4a3a72e\\App.xaml [Read Only]",
+              "ToolTip": "C:\\Users\\hyper\\AppData\\Local\\Temp\\.vsdbgsrc\\a09d3bec78e2ca81e81c6b450e121e745f00fac2af5d80c823de125bd4a3a72e\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-07-06T07:06:29.821Z",
-              "EditorCaption": " [Read Only]"
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -160,13 +159,12 @@
               "RelativeToolTip": "FUMini.DataAccess\\Context\\FUMiniContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T06:45:26.189Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T06:45:26.189Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "FUMini.UI",
+              "Title": "FUMini.UI.csproj",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\FUMini.UI.csproj",
               "RelativeDocumentMoniker": "FUMini.UI\\FUMini.UI.csproj",
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\FUMini.UI.csproj",
@@ -186,8 +184,7 @@
               "RelativeToolTip": "FUMini.UI\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T05:05:29.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T05:05:29.841Z"
             },
             {
               "$type": "Document",
@@ -199,8 +196,7 @@
               "RelativeToolTip": "FUMini.UI\\App.xaml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T05:00:29.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T05:00:29.824Z"
             },
             {
               "$type": "Document",
@@ -222,8 +218,7 @@
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\App.xaml",
               "RelativeToolTip": "FUMini.UI\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-06T04:43:48.293Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T04:43:48.293Z"
             },
             {
               "$type": "Document",
@@ -235,8 +230,7 @@
               "RelativeToolTip": "FUMini.UI\\View\\RegisterWindow.xaml.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAAAE8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T04:00:49.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T04:00:49.128Z"
             },
             {
               "$type": "Document",
@@ -248,8 +242,7 @@
               "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Base\\IGenericRepository.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:43:46.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T03:43:46.629Z"
             },
             {
               "$type": "Document",
@@ -261,8 +254,7 @@
               "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Implementation\\BookingDetailRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-06T03:43:42.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T03:43:42.63Z"
             },
             {
               "$type": "Document",
@@ -274,8 +266,7 @@
               "RelativeToolTip": "FUMini.UI\\View\\LoginWindow.xaml.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAqwEQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T15:18:01.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T15:18:01.532Z"
             },
             {
               "$type": "Document",
@@ -286,8 +277,7 @@
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\LoginWindow.xaml",
               "RelativeToolTip": "FUMini.UI\\View\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-05T14:55:39.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:55:39.255Z"
             },
             {
               "$type": "Document",
@@ -299,8 +289,7 @@
               "RelativeToolTip": "FUMini.UI\\ViewModel\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:46:19.339Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:46:19.339Z"
             },
             {
               "$type": "Document",
@@ -312,8 +301,7 @@
               "RelativeToolTip": "FUMini.Services\\Implementations\\RoomTypeService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwCIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:24:44.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:24:44.771Z"
             },
             {
               "$type": "Document",
@@ -325,8 +313,7 @@
               "RelativeToolTip": "FUMini.Services\\Implementations\\RoomInformationService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwCIAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:23:54.133Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:23:54.133Z"
             },
             {
               "$type": "Document",
@@ -338,8 +325,7 @@
               "RelativeToolTip": "FUMini.Services\\Implementations\\BookingDetailService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAcwCMAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:16:53.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:16:53.55Z"
             },
             {
               "$type": "Document",
@@ -351,8 +337,7 @@
               "RelativeToolTip": "FUMini.Services\\Implementations\\BookingReservationService.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAACMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T14:05:08.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T14:05:08.745Z"
             },
             {
               "$type": "Document",
@@ -364,8 +349,7 @@
               "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Implementation\\CustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:46:33.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:46:33.853Z"
             },
             {
               "$type": "Document",
@@ -377,8 +361,7 @@
               "RelativeToolTip": "FUMini.Services\\Implementations\\CustomerService.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwCIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:41:47.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:41:47.355Z"
             },
             {
               "$type": "Document",
@@ -390,8 +373,7 @@
               "RelativeToolTip": "FUMini.Services\\Interfaces\\IRoomTypeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:39:00.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:39:00.219Z"
             },
             {
               "$type": "Document",
@@ -403,8 +385,7 @@
               "RelativeToolTip": "FUMini.Services\\Interfaces\\IRoomInformationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:37:30.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:37:30.301Z"
             },
             {
               "$type": "Document",
@@ -416,8 +397,7 @@
               "RelativeToolTip": "FUMini.Services\\Interfaces\\IBookingDetailService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:35:56.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:35:56.188Z"
             },
             {
               "$type": "Document",
@@ -429,8 +409,7 @@
               "RelativeToolTip": "FUMini.Services\\Interfaces\\IBookingReservationService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:33:47.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:33:47.465Z"
             },
             {
               "$type": "Document",
@@ -442,8 +421,7 @@
               "RelativeToolTip": "FUMini.Services\\Base\\IBaseService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:28:34.849Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:28:34.849Z"
             },
             {
               "$type": "Document",
@@ -455,8 +433,7 @@
               "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Base\\GenericRepository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwC4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:27:32.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:27:32.159Z"
             },
             {
               "$type": "Document",
@@ -468,8 +445,7 @@
               "RelativeToolTip": "FUMini.Services\\Interfaces\\ICustomerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T13:23:25.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T13:23:25.084Z"
             },
             {
               "$type": "Document",
