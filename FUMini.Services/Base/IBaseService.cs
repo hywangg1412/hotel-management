@@ -2,7 +2,7 @@
 {
     public interface IBaseService<T, C>
     {
-        IEnumerable<T> GetAll();
+        List<T> GetAll();
         T GetByID(C id);
         void Add(T entity);
         void Update(T entity);

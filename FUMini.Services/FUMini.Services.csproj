@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Implementations\" />
+    <ProjectReference Include="..\FUMini.BussinessObjects\FUMini.BussinessObjects.csproj" />
+    <ProjectReference Include="..\FUMini.DataAccess\FUMini.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

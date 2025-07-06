@@ -1,6 +1,6 @@
 ﻿using FUMini.BussinessObjects.Models;
-using FUMini.Services.Interfaces;
 using FUMini.DataAccess.Repositories.Interfaces;
+using FUMini.Services.Interfaces;
 
 namespace FUMini.Services.Implementations
 {
@@ -30,9 +30,9 @@ namespace FUMini.Services.Implementations
             _roomTypeRepository.Save();
         }
 
-        public IEnumerable<RoomType> GetAll()
+        public List<RoomType> GetAll()
         {
-            return _roomTypeRepository.GetAll();
+            return _roomTypeRepository.GetAll().ToList();
         }
 
         public RoomType GetByID(int id)

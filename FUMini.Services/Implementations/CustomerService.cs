@@ -30,9 +30,9 @@ namespace FUMini.Services.Implementations
             _customerRepository.Save();
         }
 
-        public IEnumerable<Customer> GetAll()
+        public List<Customer> GetAll()
         {
-            return _customerRepository.GetAll();
+            return _customerRepository.GetAll().ToList();
         }
 
         public Customer GetByID(int id)

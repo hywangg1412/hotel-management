@@ -31,9 +31,9 @@ namespace FUMini.Services.Implementations
             _bookingDetailRepository.Save();
         }
 
-        public IEnumerable<BookingDetail> GetAll()
+        public List<BookingDetail> GetAll()
         {
-            return _bookingDetailRepository.GetAll();
+            return _bookingDetailRepository.GetAll().ToList();
         }
 
         public BookingDetail GetByID(int id)
