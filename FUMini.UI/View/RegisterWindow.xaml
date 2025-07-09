@@ -15,14 +15,16 @@
                            Foreground="#273c75" HorizontalAlignment="Center" Margin="0,0,0,24"/>
                 
                 <TextBlock Text="Full Name" Margin="0,0,0,4" FontWeight="SemiBold"/>
-                <TextBox x:Name="FullNameTextBox" Margin="0,0,0,12" Height="36" Padding="10,0"
+                <TextBox Margin="0,0,0,12" Height="36" Padding="10,0"
                          Background="#f1f2f6" BorderBrush="#dcdde1" BorderThickness="1"
-                         FontSize="15" VerticalContentAlignment="Center"/>
+                         FontSize="15" VerticalContentAlignment="Center"
+                         Text="{Binding FullName, UpdateSourceTrigger=PropertyChanged}"/>
                 
                 <TextBlock Text="Email" Margin="0,0,0,4" FontWeight="SemiBold"/>
-                <TextBox x:Name="EmailTextBox" Margin="0,0,0,12" Height="36" Padding="10,0"
+                <TextBox Margin="0,0,0,12" Height="36" Padding="10,0"
                          Background="#f1f2f6" BorderBrush="#dcdde1" BorderThickness="1"
-                         FontSize="15" VerticalContentAlignment="Center"/>
+                         FontSize="15" VerticalContentAlignment="Center"
+                         Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
                 
                 <TextBlock Text="Password" Margin="0,0,0,4" FontWeight="SemiBold"/>
                 <PasswordBox x:Name="PasswordBox" Margin="0,0,0,12" Height="36" Padding="10,0"
@@ -35,20 +37,34 @@
                              FontSize="15" VerticalContentAlignment="Center"/>
                 
                 <TextBlock Text="Phone" Margin="0,0,0,4" FontWeight="SemiBold"/>
-                <TextBox x:Name="PhoneTextBox" Margin="0,0,0,16" Height="36" Padding="10,0"
+                <TextBox Margin="0,0,0,16" Height="36" Padding="10,0"
                          Background="#f1f2f6" BorderBrush="#dcdde1" BorderThickness="1"
-                         FontSize="15" VerticalContentAlignment="Center"/>
+                         FontSize="15" VerticalContentAlignment="Center"
+                         Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button Content="Register" Height="40" Width="140"
                         Background="#273c75" Foreground="White"
                         FontWeight="Bold" FontSize="16"
                         BorderBrush="#273c75" BorderThickness="1"
-                        Cursor="Hand" Click="RegisterButton_Click">
+                        Cursor="Hand" Command="{Binding RegisterCommand}">
                     <Button.Style>
                         <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
                             <Setter Property="Background" Value="#273c75"/>
                             <Setter Property="Foreground" Value="White"/>
                             <Setter Property="BorderBrush" Value="#273c75"/>
                             <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}"
+                                                BorderThickness="{TemplateBinding BorderThickness}"
+                                                CornerRadius="8">
+                                            <ContentPresenter HorizontalAlignment="Center" 
+                                                            VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
                             <Setter Property="Effect">
                                 <Setter.Value>
                                     <DropShadowEffect Color="#888" BlurRadius="8" ShadowDepth="2"/>
@@ -68,8 +84,8 @@
                     </Button.Style>
                 </Button>
 
-                <TextBlock x:Name="ErrorTextBlock" Foreground="#e84118" Margin="0,10,0,0"
-                           Text="" TextAlignment="Center" FontWeight="SemiBold" FontSize="13"/>
+                <TextBlock Foreground="#e84118" Margin="0,10,0,0"
+                           Text="{Binding ErrorMessage}" TextAlignment="Center" FontWeight="SemiBold" FontSize="13"/>
             </StackPanel>
         </Border>
     </Grid>

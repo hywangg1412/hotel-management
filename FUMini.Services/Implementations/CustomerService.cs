@@ -40,6 +40,11 @@ namespace FUMini.Services.Implementations
             return _customerRepository.GetByID(id);
         }
 
+        public bool IsEmailExist(string email)
+        {
+            return _customerRepository.GetAll().Any(c => c.EmailAddress == email);
+        }
+
         public void Update(Customer entity)
         {
             _customerRepository.Update(entity);

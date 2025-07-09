@@ -5,5 +5,7 @@ namespace FUMini.Services.Interfaces
 {
     public interface ICustomerService : IBaseService<Customer, int>
     {
+        bool IsEmailExist(string email);
+
     }
 }

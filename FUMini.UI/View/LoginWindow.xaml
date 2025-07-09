@@ -5,31 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FUMini.UI.View"
         mc:Ignorable="d"
-        Title="FUMiniSystem" Height="450" Width="800">
+        Title="FUMiniSystem" Height="556" Width="894">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
     <Grid Background="#f5f6fa">
-        <Border Width="370" Height="340" Background="White" CornerRadius="16"
-                VerticalAlignment="Center" HorizontalAlignment="Center"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="47*"/>
+        </Grid.ColumnDefinitions>
+        <Border Width="370" Height="428" Background="White" CornerRadius="16"
+                VerticalAlignment="Center" HorizontalAlignment="Left"
                 Padding="32" 
-                BorderBrush="#dcdde1" BorderThickness="1">
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="269" >
+                BorderBrush="#dcdde1" BorderThickness="1" Grid.ColumnSpan="2" Margin="288,0,0,0">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="297" >
                 <TextBlock Text="LOGIN" FontSize="28" FontWeight="Bold"
                            Foreground="#273c75" HorizontalAlignment="Center" Margin="0,0,0,28"/>
 
                 <TextBlock Text="Email" Margin="0,0,0,4" FontWeight="SemiBold"/>
-                <TextBox x:Name="EmailTextBox" Height="36" Margin="0,0,0,16" Padding="10,0"   
+                <TextBox Height="36" Margin="0,0,0,16" Padding="10,0"   
                          Background="#f1f2f6" BorderBrush="#dcdde1" BorderThickness="1"
-                         FontSize="15"  VerticalContentAlignment="Center"/>
+                         FontSize="15" VerticalContentAlignment="Center"
+                         Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
 
                 <TextBlock Text="Password" Margin="0,0,0,4" FontWeight="SemiBold"/>
                 <PasswordBox x:Name="PasswordBox" Height="36" Margin="0,0,0,24" Padding="10,0" 
                              Background="#f1f2f6" BorderBrush="#dcdde1" BorderThickness="1"
-                             FontSize="15"  VerticalContentAlignment="Center"/>
+                             FontSize="15" VerticalContentAlignment="Center"/>
 
                 <Button Content="Login" Width="140" Height="40"
                         Background="#273c75" Foreground="White"
                         FontWeight="Bold" FontSize="16"
                         BorderBrush="#273c75" BorderThickness="1"
-                        Cursor="Hand" Click="LoginButton_Click" Margin="0,0,0,10">                               
+                        Cursor="Hand" Command="{Binding LoginCommand}" Margin="0,0,0,10">
                     <Button.Style>
                         <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
                             <Setter Property="Background" Value="#273c75"/>
@@ -55,24 +63,47 @@
                     </Button.Style>
                 </Button>
 
-                <TextBlock Text="Don't have an account?" HorizontalAlignment="Center" Margin="0,0,0,2"/>
-                <TextBlock Text="Register here" Foreground="#2980b9" FontWeight="Bold" Cursor="Hand"
-                           HorizontalAlignment="Center" MouseLeftButtonUp="RegisterTextBlock_MouseLeftButtonUp">
-                    <TextBlock.Style>
-                        <Style TargetType="TextBlock">
+                <TextBlock Text="Don't have an account?" HorizontalAlignment="Center" Margin="0,10,0,2"/>
+                <Button Content="Register" Command="{Binding RegisterCommand}"
+                        Background="Transparent"
+                        Foreground="#2980b9"
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Width="120"
+                        Height="32">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
+                            <Setter Property="Background" Value="Transparent"/>
                             <Setter Property="Foreground" Value="#2980b9"/>
-                            <Setter Property="TextDecorations" Value="Underline"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="FontSize" Value="15"/>
+                            <Setter Property="TextBlock.TextDecorations" Value="Underline"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}" 
+                                                CornerRadius="6" 
+                                                Padding="{TemplateBinding Padding}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
                             <Style.Triggers>
                                 <Trigger Property="IsMouseOver" Value="True">
                                     <Setter Property="Foreground" Value="#40739e"/>
+                                    <Setter Property="Background" Value="#ecf0f1"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
-                    </TextBlock.Style>
-                </TextBlock>
+                    </Button.Style>
+                </Button>
 
-                <TextBlock x:Name="ErrorTextBlock" Foreground="#e84118" Margin="0,18,0,0"        
-                           Text="" TextAlignment="Center" FontWeight="SemiBold" FontSize="13"/>
+                <TextBlock Foreground="#e84118" Margin="0,18,0,0"        
+                           Text="{Binding ErrorMessage}" TextAlignment="Center" FontWeight="SemiBold" FontSize="13"
+                           Visibility="{Binding IsErrorVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
             </StackPanel>
         </Border>
     </Grid>
