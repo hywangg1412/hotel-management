@@ -30,6 +30,11 @@ namespace FUMini.Services.Implementations
             _customerRepository.Save();
         }
 
+        public Customer FindCustomerByEmail(string email)
+        {
+            return _customerRepository.GetAll().FirstOrDefault(c => c.EmailAddress == email);
+        }
+
         public List<Customer> GetAll()
         {
             return _customerRepository.GetAll().ToList();
@@ -49,6 +54,16 @@ namespace FUMini.Services.Implementations
         {
             _customerRepository.Update(entity);
             _customerRepository.Save();
+        }
+
+        public void UpdateStatus(int customerId, byte status)
+        {
+            var customer = GetByID(customerId);
+            if (customer != null)
+            {
+                customer.CustomerStatus = status;
+                Update(customer);
+            }
         }
     }
 }

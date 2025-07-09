@@ -17,7 +17,6 @@ namespace FUMini.UI.Ultis
                 return false;
             }
         }
-
         public static bool IsValidPhone(string phone)
         {
             return Regex.IsMatch(phone ?? "", @"^\d{10,11}$");

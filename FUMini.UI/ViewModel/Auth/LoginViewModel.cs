@@ -101,7 +101,7 @@ namespace FUMini.UI.ViewModel.Auth
             }
 
             // Check Customer Account
-            var customer = _customerService.GetAll().FirstOrDefault(c => c.EmailAddress == Email);
+            var customer = _customerService.FindCustomerByEmail(_email);
 
             if (customer == null)
             {
@@ -114,6 +114,7 @@ namespace FUMini.UI.ViewModel.Auth
                 ErrorMessage = "Invalid password";
                 return;
             }
+            _customerService.UpdateStatus(customer.CustomerID, 1);
 
             MessageBox.Show($"Welcome {customer.CustomerFullName}!", "Login Successful", MessageBoxButton.OK, MessageBoxImage.Information);
             OpenMainWindow(false, customer);
@@ -140,9 +141,10 @@ namespace FUMini.UI.ViewModel.Auth
 
         #region Helper Methods
 
-        private void OpenMainWindow(bool isAdmin, Customer customer)
+        private void OpenMainWindow(bool isAdmin, Customer? customer)
         {
-            var mainWindow = new MainWindow();
+            var vm = new MainWindowViewModel(isAdmin, _customerService, customer);
+            var mainWindow = new MainWindow(vm);
             mainWindow.Show();
             CloseCurrentWindow();
         }
