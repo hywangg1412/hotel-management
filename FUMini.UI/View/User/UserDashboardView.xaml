@@ -14,6 +14,9 @@
         <DataTemplate DataType="{x:Type uservm:BookingHistoryViewModel}">
             <userView:BookingHistoryView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type uservm:CreateBookingViewModel}">
+            <userView:CreateBookingView/>
+        </DataTemplate>
         <DataTemplate DataType="{x:Type uservm:UpdateProfileViewModel}">
             <userView:UpdateProfileView/>
         </DataTemplate>
@@ -24,9 +27,13 @@
             <Button Content="Profile"
                     Command="{Binding ShowProfileCommand}"
                     Margin="10" Height="40"/>
+            <Button Content="Add Booking"
+                    Command="{Binding ShowCreateBookingCommand}"
+                    Margin="10" Height="40"/>
             <Button Content="Booking History"
                     Command="{Binding ShowBookingHistoryCommand}"
                     Margin="10" Height="40"/>
+            
         </StackPanel>
         <!-- Content Area -->
         <Border Background="White" Padding="24" Margin="16,0,0,0" CornerRadius="8">

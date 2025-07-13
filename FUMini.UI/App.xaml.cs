@@ -55,6 +55,7 @@ namespace FUMini.UI
 
             // Admin Account
             services.AddSingleton(adminConfig);
+            services.AddSingleton<IServiceProvider>(serviceProvider => serviceProvider);
         }
 
         protected override void OnStartup(StartupEventArgs e)

@@ -2,6 +2,7 @@
 using FUMini.Services.Interfaces;
 using FUMini.UI.Ultis;
 using FUMini.UI.ViewModel.Base;
+using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
 using System.Windows.Input;
 
@@ -11,16 +12,21 @@ namespace FUMini.UI.ViewModel.Auth
     {
         private readonly ICustomerService _customerService;
         private readonly AdminConfig _adminConfig;
+        private readonly IServiceProvider _serviceProvider;
         private string _email;
         private string _password;
         private string _errorMessage;
         private bool _isErrorVisible;
         public event Action? RequestClose;
 
-        public LoginViewModel(ICustomerService customerService, AdminConfig adminConfig)
+        public LoginViewModel(
+            ICustomerService customerService,
+            AdminConfig adminConfig,
+            IServiceProvider serviceProvider)
         {
             _customerService = customerService;
             _adminConfig = adminConfig;
+            _serviceProvider = serviceProvider;
 
             LoginCommand = new RelayCommand(ExecuteLogin, CanExecuteLogin);
             RegisterCommand = new RelayCommand(ExecuteRegister);
@@ -143,9 +149,35 @@ namespace FUMini.UI.ViewModel.Auth
 
         private void OpenMainWindow(bool isAdmin, Customer? customer)
         {
-            var vm = new MainWindowViewModel(isAdmin, _customerService, customer);
-            var mainWindow = new MainWindow(vm);
-            mainWindow.Show();
+            if (isAdmin)
+            {
+                // Admin không cần các service khác
+                var vm = new MainWindowViewModel(
+                    isAdmin,
+                    _customerService,
+                    null, null, null, null, null);
+                var mainWindow = new MainWindow(vm);
+                mainWindow.Show();
+            }
+            else
+            {
+                var roomInformationService = _serviceProvider.GetRequiredService<IRoomInformationService>();
+                var roomTypeService = _serviceProvider.GetRequiredService<IRoomTypeService>();
+                var bookingReservationService = _serviceProvider.GetRequiredService<IBookingReservationService>();
+                var bookingDetailService = _serviceProvider.GetRequiredService<IBookingDetailService>();
+
+                var vm = new MainWindowViewModel(
+                    isAdmin,
+                    _customerService,
+                    roomInformationService,
+                    roomTypeService,
+                    bookingReservationService,
+                    bookingDetailService,
+                    customer);
+                var mainWindow = new MainWindow(vm);
+                mainWindow.Show();
+            }
+
             CloseCurrentWindow();
         }
 

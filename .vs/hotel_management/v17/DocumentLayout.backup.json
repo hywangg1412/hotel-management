@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "L:\\Workspace\\C#\\hotel_management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\user\\updateprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\user\\updateprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\createbookingview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\createbookingview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\updateprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\updateprofileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\createbookingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\createbookingview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\updateprofileview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\updateprofileview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\profileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\profileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\auth\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\auth\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\auth\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\auth\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\converters\\stringtovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\auth\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\auth\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\auth\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\auth\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\user\\userdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +55,20 @@
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\user\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B1CDCD6-AF8F-4B2F-B60E-FBD017E5D9C2}|FUMini.DataAccess\\FUMini.DataAccess.csproj|l:\\workspace\\c#\\hotel_management\\fumini.dataaccess\\configurations\\bookingdetailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1CDCD6-AF8F-4B2F-B60E-FBD017E5D9C2}|FUMini.DataAccess\\FUMini.DataAccess.csproj|solutionrelative:fumini.dataaccess\\configurations\\bookingdetailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\user\\updateprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\user\\updateprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\user\\createbookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\user\\createbookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\userdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\userdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\user\\bookinghistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\user\\bookinghistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7B1CDCD6-AF8F-4B2F-B60E-FBD017E5D9C2}|FUMini.DataAccess\\FUMini.DataAccess.csproj|l:\\workspace\\c#\\hotel_management\\fumini.dataaccess\\repositories\\base\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,48 +79,16 @@
       "RelativeMoniker": "D:0:0:{7B1CDCD6-AF8F-4B2F-B60E-FBD017E5D9C2}|FUMini.DataAccess\\FUMini.DataAccess.csproj|solutionrelative:fumini.dataaccess\\repositories\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B1CDCD6-AF8F-4B2F-B60E-FBD017E5D9C2}|FUMini.DataAccess\\FUMini.DataAccess.csproj|l:\\workspace\\c#\\hotel_management\\fumini.dataaccess\\repositories\\base\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1CDCD6-AF8F-4B2F-B60E-FBD017E5D9C2}|FUMini.DataAccess\\FUMini.DataAccess.csproj|solutionrelative:fumini.dataaccess\\repositories\\base\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBC4B032-AB96-4FC7-976D-5C3131FCEF1E}|FUMini.Services\\FUMini.Services.csproj|l:\\workspace\\c#\\hotel_management\\fumini.services\\implementations\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBC4B032-AB96-4FC7-976D-5C3131FCEF1E}|FUMini.Services\\FUMini.Services.csproj|solutionrelative:fumini.services\\implementations\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\profileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\profileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\profileview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\profileview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\auth\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\auth\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\userdashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\userdashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBC4B032-AB96-4FC7-976D-5C3131FCEF1E}|FUMini.Services\\FUMini.Services.csproj|l:\\workspace\\c#\\hotel_management\\fumini.services\\base\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBC4B032-AB96-4FC7-976D-5C3131FCEF1E}|FUMini.Services\\FUMini.Services.csproj|solutionrelative:fumini.services\\base\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBC4B032-AB96-4FC7-976D-5C3131FCEF1E}|FUMini.Services\\FUMini.Services.csproj|l:\\workspace\\c#\\hotel_management\\fumini.services\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBC4B032-AB96-4FC7-976D-5C3131FCEF1E}|FUMini.Services\\FUMini.Services.csproj|solutionrelative:fumini.services\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\userdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\userdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\admin\\admindashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\admin\\admindashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\admin\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\admin\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\user\\bookinghistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\user\\bookinghistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\admin\\roommanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,10 +119,6 @@
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\admin\\bookingmanagementviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\admin\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\admin\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\user\\bookinghistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\user\\bookinghistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -127,16 +131,8 @@
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\fumini.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\ultis\\validators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\ultis\\validators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\viewmodel\\auth\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\auth\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -147,19 +143,7 @@
       "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\viewmodel\\base\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hyper\\AppData\\Local\\Temp\\.vsdbgsrc\\262b92d8baf1520a3d80c9ad77e0557eef8bd616c124907f4237a26d30d4b578\\App.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\auth\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\auth\\registerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\auth\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|solutionrelative:fumini.ui\\view\\auth\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33AAB80C-2F36-4AEF-A6F5-22E77B531C36}|FUMini.UI\\FUMini.UI.csproj|l:\\workspace\\c#\\hotel_management\\fumini.ui\\view\\auth\\registerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -181,7 +165,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 257,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -189,7 +173,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "CreateBookingView.xaml.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\CreateBookingView.xaml.cs",
+              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\CreateBookingView.xaml.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\CreateBookingView.xaml.cs",
+              "RelativeToolTip": "FUMini.UI\\View\\User\\CreateBookingView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T04:34:15.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UpdateProfileViewModel.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
+              "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
+              "RelativeToolTip": "FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T04:29:19.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserDashboardView.xaml",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UserDashboardView.xaml",
+              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\UserDashboardView.xaml",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UserDashboardView.xaml",
+              "RelativeToolTip": "FUMini.UI\\View\\User\\UserDashboardView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T03:17:26.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StringToVisibilityConverter.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\Converters\\StringToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "FUMini.UI\\Converters\\StringToVisibilityConverter.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\Converters\\StringToVisibilityConverter.cs",
+              "RelativeToolTip": "FUMini.UI\\Converters\\StringToVisibilityConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T03:13:50.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateBookingView.xaml",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\CreateBookingView.xaml",
+              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\CreateBookingView.xaml",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\CreateBookingView.xaml",
+              "RelativeToolTip": "FUMini.UI\\View\\User\\CreateBookingView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-10T03:10:41.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CreateBookingViewModel.cs",
+              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\CreateBookingViewModel.cs",
+              "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\User\\CreateBookingViewModel.cs",
+              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\CreateBookingViewModel.cs",
+              "RelativeToolTip": "FUMini.UI\\ViewModel\\User\\CreateBookingViewModel.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAQwOkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T02:56:37.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Repositories\\Base\\GenericRepository.cs",
               "RelativeDocumentMoniker": "FUMini.DataAccess\\Repositories\\Base\\GenericRepository.cs",
@@ -197,12 +253,11 @@
               "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Base\\GenericRepository.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAcwFkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:51:44.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T14:51:44.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "FUMini.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
@@ -210,134 +265,11 @@
               "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Interfaces\\ICustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:51:39.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T14:51:39.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IGenericRepository.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Repositories\\Base\\IGenericRepository.cs",
-              "RelativeDocumentMoniker": "FUMini.DataAccess\\Repositories\\Base\\IGenericRepository.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Repositories\\Base\\IGenericRepository.cs",
-              "RelativeToolTip": "FUMini.DataAccess\\Repositories\\Base\\IGenericRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:51:29.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookingDetailConfiguration.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Configurations\\BookingDetailConfiguration.cs",
-              "RelativeDocumentMoniker": "FUMini.DataAccess\\Configurations\\BookingDetailConfiguration.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Configurations\\BookingDetailConfiguration.cs",
-              "RelativeToolTip": "FUMini.DataAccess\\Configurations\\BookingDetailConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T14:50:03.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateProfileView.xaml.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UpdateProfileView.xaml.cs",
-              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\UpdateProfileView.xaml.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UpdateProfileView.xaml.cs",
-              "RelativeToolTip": "FUMini.UI\\View\\User\\UpdateProfileView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T10:18:42.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateProfileView.xaml",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UpdateProfileView.xaml",
-              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\UpdateProfileView.xaml",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UpdateProfileView.xaml",
-              "RelativeToolTip": "FUMini.UI\\View\\User\\UpdateProfileView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T10:14:47.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IBaseService.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.Services\\Base\\IBaseService.cs",
-              "RelativeDocumentMoniker": "FUMini.Services\\Base\\IBaseService.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.Services\\Base\\IBaseService.cs",
-              "RelativeToolTip": "FUMini.Services\\Base\\IBaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T09:43:12.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateProfileViewModel.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
-              "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
-              "RelativeToolTip": "FUMini.UI\\ViewModel\\User\\UpdateProfileViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T08:59:48.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AdminDashboardView.xaml.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Admin\\AdminDashboardView.xaml.cs",
-              "RelativeDocumentMoniker": "FUMini.UI\\View\\Admin\\AdminDashboardView.xaml.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Admin\\AdminDashboardView.xaml.cs",
-              "RelativeToolTip": "FUMini.UI\\View\\Admin\\AdminDashboardView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T08:48:04.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "AdminDashboardView.xaml",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Admin\\AdminDashboardView.xaml",
-              "RelativeDocumentMoniker": "FUMini.UI\\View\\Admin\\AdminDashboardView.xaml",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Admin\\AdminDashboardView.xaml",
-              "RelativeToolTip": "FUMini.UI\\View\\Admin\\AdminDashboardView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T08:16:24.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserDashboardView.xaml.cs",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UserDashboardView.xaml.cs",
-              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\UserDashboardView.xaml.cs",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UserDashboardView.xaml.cs",
-              "RelativeToolTip": "FUMini.UI\\View\\User\\UserDashboardView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T08:13:20.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserDashboardView.xaml",
-              "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UserDashboardView.xaml",
-              "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\UserDashboardView.xaml",
-              "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\UserDashboardView.xaml",
-              "RelativeToolTip": "FUMini.UI\\View\\User\\UserDashboardView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-09T08:00:41.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "ProfileView.xaml.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\ProfileView.xaml.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\ProfileView.xaml.cs",
@@ -349,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "BookingHistoryView.xaml.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\BookingHistoryView.xaml.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\BookingHistoryView.xaml.cs",
@@ -361,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "BookingHistoryView.xaml",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\BookingHistoryView.xaml",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\BookingHistoryView.xaml",
@@ -372,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "AdminDashboardViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Admin\\AdminDashboardViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Admin\\AdminDashboardViewModel.cs",
@@ -384,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "ProfileView.xaml",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\User\\ProfileView.xaml",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\User\\ProfileView.xaml",
@@ -396,20 +328,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "UserDashboardViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\UserDashboardViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\User\\UserDashboardViewModel.cs",
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\UserDashboardViewModel.cs",
               "RelativeToolTip": "FUMini.UI\\ViewModel\\User\\UserDashboardViewModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAADIAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T06:55:26.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T06:55:26.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ReportViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Admin\\ReportViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Admin\\ReportViewModel.cs",
@@ -421,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "BookingManagementViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Admin\\BookingManagementViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Admin\\BookingManagementViewModel.cs",
@@ -433,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "RoomManagementViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Admin\\RoomManagementViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Admin\\RoomManagementViewModel.cs",
@@ -445,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "CustomerManagementViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Admin\\CustomerManagementViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Admin\\CustomerManagementViewModel.cs",
@@ -457,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 16,
               "Title": "BookingHistoryViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\BookingHistoryViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\User\\BookingHistoryViewModel.cs",
@@ -469,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "ProfileViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\User\\ProfileViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\User\\ProfileViewModel.cs",
@@ -477,12 +408,11 @@
               "RelativeToolTip": "FUMini.UI\\ViewModel\\User\\ProfileViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T04:19:47.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T04:19:47.763Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\AssemblyInfo.cs",
@@ -494,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Base\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Base\\BaseViewModel.cs",
@@ -506,20 +436,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\MainWindowViewModel.cs",
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\MainWindowViewModel.cs",
               "RelativeToolTip": "FUMini.UI\\ViewModel\\MainWindowViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowC4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T03:02:44.319Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-09T03:02:44.319Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\hyper\\AppData\\Local\\Temp\\.vsdbgsrc\\262b92d8baf1520a3d80c9ad77e0557eef8bd616c124907f4237a26d30d4b578\\App.xaml",
               "ToolTip": "C:\\Users\\hyper\\AppData\\Local\\Temp\\.vsdbgsrc\\262b92d8baf1520a3d80c9ad77e0557eef8bd616c124907f4237a26d30d4b578\\App.xaml [Read Only]",
@@ -530,19 +459,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 7,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\App.xaml.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\App.xaml.cs",
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\App.xaml.cs",
               "RelativeToolTip": "FUMini.UI\\App.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T02:25:52.597Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\App.xaml",
               "RelativeDocumentMoniker": "FUMini.UI\\App.xaml",
@@ -554,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\MainWindow.xaml.cs",
@@ -566,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "ICustomerService.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.Services\\Interfaces\\ICustomerService.cs",
               "RelativeDocumentMoniker": "FUMini.Services\\Interfaces\\ICustomerService.cs",
@@ -578,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "RegisterWindow.xaml",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Auth\\RegisterWindow.xaml",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\Auth\\RegisterWindow.xaml",
@@ -589,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 38,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.DataAccess\\Repositories\\Implementation\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "FUMini.DataAccess\\Repositories\\Implementation\\CustomerRepository.cs",
@@ -601,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.Services\\Implementations\\CustomerService.cs",
               "RelativeDocumentMoniker": "FUMini.Services\\Implementations\\CustomerService.cs",
@@ -609,8 +538,7 @@
               "RelativeToolTip": "FUMini.Services\\Implementations\\CustomerService.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAiwEAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T15:21:38.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T15:21:38.122Z"
             },
             {
               "$type": "Document",
@@ -626,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "FUMini.UI.csproj",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\FUMini.UI.csproj",
               "RelativeDocumentMoniker": "FUMini.UI\\FUMini.UI.csproj",
@@ -634,11 +562,12 @@
               "RelativeToolTip": "FUMini.UI\\FUMini.UI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-08T15:07:46.826Z"
+              "WhenOpened": "2025-07-08T15:07:46.826Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "FUMini.UI\\MainWindow.xaml",
@@ -649,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 9,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Auth\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Auth\\RegisterViewModel.cs",
@@ -661,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 3,
               "Title": "RegisterWindow.xaml.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Auth\\RegisterWindow.xaml.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\Auth\\RegisterWindow.xaml.cs",
@@ -673,19 +602,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 4,
               "Title": "LoginWindow.xaml.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Auth\\LoginWindow.xaml.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\Auth\\LoginWindow.xaml.cs",
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Auth\\LoginWindow.xaml.cs",
               "RelativeToolTip": "FUMini.UI\\View\\Auth\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T10:34:11.342Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 37,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\View\\Auth\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "FUMini.UI\\View\\Auth\\LoginWindow.xaml",
@@ -696,13 +625,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Auth\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "FUMini.UI\\ViewModel\\Auth\\LoginViewModel.cs",
               "ToolTip": "L:\\Workspace\\C#\\hotel_management\\FUMini.UI\\ViewModel\\Auth\\LoginViewModel.cs",
               "RelativeToolTip": "FUMini.UI\\ViewModel\\Auth\\LoginViewModel.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAswJEAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T10:34:09.227Z"
             }
