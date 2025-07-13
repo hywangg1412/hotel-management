@@ -4,9 +4,87 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FUMini.UI.View.User"
+             xmlns:converters="clr-namespace:FUMini.UI.Converters"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    
+    <UserControl.Resources>
+        <converters:BookingStatusConverter x:Key="BookingStatusConverter"/>
+    </UserControl.Resources>
+    
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0" Text="Booking History" 
+                   FontSize="24" FontWeight="Bold" 
+                   Margin="0,0,0,20"/>
+
+        <!-- Search and Filter Panel -->
+        <Border Grid.Row="1" Background="#f5f5f5" Padding="15" Margin="0,0,0,15" CornerRadius="5">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Search:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Width="200" Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                         Margin="0,0,20,0" VerticalAlignment="Center" Padding="5"/>
+                
+                <TextBlock Text="From Date:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <DatePicker Width="120" SelectedDate="{Binding FromDate}"
+                            Margin="0,0,20,0" VerticalAlignment="Center"/>
+                
+                <TextBlock Text="To Date:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <DatePicker Width="120" SelectedDate="{Binding ToDate}"
+                            Margin="0,0,20,0" VerticalAlignment="Center"/>
+                
+                <Button Content="Refresh" Command="{Binding RefreshCommand}"
+                        Width="80" Height="30" VerticalAlignment="Center" Background="#007acc" Foreground="White"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Booking History DataGrid -->
+        <DataGrid Grid.Row="2" ItemsSource="{Binding BookingHistory}"
+                  SelectedItem="{Binding SelectedBooking}"
+                  AutoGenerateColumns="False" IsReadOnly="True"
+                  GridLinesVisibility="All" HeadersVisibility="All"
+                  AlternatingRowBackground="#f9f9f9"
+                  SelectionMode="Single"
+                  CanUserResizeRows="False"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  CanUserReorderColumns="True"
+                  CanUserSortColumns="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Booking ID" Binding="{Binding BookingReservationID}" Width="100"/>
+                <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate, StringFormat=dd/MM/yyyy}" Width="120"/>
+                <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, StringFormat=C0}" Width="120"/>
+                <DataGridTextColumn Header="Status" Width="120">
+                    <DataGridTextColumn.Binding>
+                        <Binding Path="BookingStatus" Converter="{StaticResource BookingStatusConverter}"/>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Action Buttons -->
+        <Border Grid.Row="3" Background="#f5f5f5" Padding="15" Margin="0,15,0,0" CornerRadius="5">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="View Details" Command="{Binding ViewDetailsCommand}"
+                        Width="120" Height="35" Margin="0,0,10,0" 
+                        Background="#28a745" Foreground="White"/>
+                <Button Content="Edit Booking" Command="{Binding EditBookingCommand}"
+                        Width="120" Height="35" Margin="0,0,10,0"
+                        Background="#ffc107" Foreground="Black"/>
+                <Button Content="Cancel Booking" Command="{Binding DeleteBookingCommand}"
+                        Width="120" Height="35" Background="#dc3545" Foreground="White"/>
+            </StackPanel>
+        </Border>
+
+        <!-- VÙNG HIỂN THỊ VIEW CON -->
+        <ContentControl Grid.Row="4" Content="{Binding CurrentUserView}" />
     </Grid>
 </UserControl>

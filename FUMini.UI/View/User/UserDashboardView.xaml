@@ -20,6 +20,12 @@
         <DataTemplate DataType="{x:Type uservm:UpdateProfileViewModel}">
             <userView:UpdateProfileView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type uservm:BookingDetailsViewModel}">
+            <userView:BookingDetailsView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type uservm:EditBookingViewModel}">
+            <userView:EditBookingView/>
+        </DataTemplate>
     </UserControl.Resources>
     <DockPanel>
         <!-- Sidebar/Menu -->

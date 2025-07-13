@@ -1,6 +1,7 @@
 ﻿using FUMini.BussinessObjects.Models;
 using FUMini.DataAccess.Repositories.Interfaces;
 using FUMini.Services.Interfaces;
+using System.Linq;
 
 namespace FUMini.Services.Implementations
 {
@@ -44,6 +45,19 @@ namespace FUMini.Services.Implementations
         public void Update(BookingDetail entity)
         {
             _bookingDetailRepository.Update(entity);
+            _bookingDetailRepository.Save();
+        }
+
+        public void UpdateWithRoomChange(int bookingReservationId, int oldRoomId, BookingDetail newDetail)
+        {
+            var oldDetail = _bookingDetailRepository.GetAll()
+                .FirstOrDefault(bd => bd.BookingReservationID == bookingReservationId && bd.RoomID == oldRoomId);
+            if (oldDetail != null)
+            {
+                _bookingDetailRepository.Delete(oldDetail);
+                _bookingDetailRepository.Save();
+            }
+            _bookingDetailRepository.Insert(newDetail);
             _bookingDetailRepository.Save();
         }
     }

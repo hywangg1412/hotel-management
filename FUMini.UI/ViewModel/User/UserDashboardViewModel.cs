@@ -40,7 +40,11 @@ namespace FUMini.UI.ViewModel.User
             EditProfileCommand = new RelayCommand(OpenEditProfile);
             // Initialize VM
             ProfileVM = new ProfileViewModel(customer, EditProfileCommand);
-            BookingHistoryVM = new BookingHistoryViewModel(customer);
+            BookingHistoryVM = new BookingHistoryViewModel(
+                customer, 
+                BookingReservationService, 
+                BookingDetailService, 
+                RoomInformationService);
             CreateBookingVM = new CreateBookingViewModel(customer, RoomInformationService, RoomTypeService, BookingReservationService, BookingDetailService);
 
             // Initialize Commands 
