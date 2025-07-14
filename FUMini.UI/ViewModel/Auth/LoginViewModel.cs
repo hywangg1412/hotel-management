@@ -133,7 +133,7 @@ namespace FUMini.UI.ViewModel.Auth
 
         private void ExecuteRegister()
         {
-            var registerWindow = new View.RegisterWindow(_customerService);
+            var registerWindow = _serviceProvider.GetRequiredService<View.RegisterWindow>();
             registerWindow.ShowDialog();
         }
 
@@ -149,34 +149,22 @@ namespace FUMini.UI.ViewModel.Auth
 
         private void OpenMainWindow(bool isAdmin, Customer? customer)
         {
-            if (isAdmin)
-            {
-                // Admin không cần các service khác
-                var vm = new MainWindowViewModel(
-                    isAdmin,
-                    _customerService,
-                    null, null, null, null, null);
-                var mainWindow = new MainWindow(vm);
-                mainWindow.Show();
-            }
-            else
-            {
-                var roomInformationService = _serviceProvider.GetRequiredService<IRoomInformationService>();
-                var roomTypeService = _serviceProvider.GetRequiredService<IRoomTypeService>();
-                var bookingReservationService = _serviceProvider.GetRequiredService<IBookingReservationService>();
-                var bookingDetailService = _serviceProvider.GetRequiredService<IBookingDetailService>();
+            var roomInformationService = _serviceProvider.GetRequiredService<IRoomInformationService>();
+            var roomTypeService = _serviceProvider.GetRequiredService<IRoomTypeService>();
+            var bookingReservationService = _serviceProvider.GetRequiredService<IBookingReservationService>();
+            var bookingDetailService = _serviceProvider.GetRequiredService<IBookingDetailService>();
 
-                var vm = new MainWindowViewModel(
-                    isAdmin,
-                    _customerService,
-                    roomInformationService,
-                    roomTypeService,
-                    bookingReservationService,
-                    bookingDetailService,
-                    customer);
-                var mainWindow = new MainWindow(vm);
-                mainWindow.Show();
-            }
+            var vm = new MainWindowViewModel(
+                isAdmin,
+                _customerService,
+                roomInformationService,
+                roomTypeService,
+                bookingReservationService,
+                bookingDetailService,
+                _serviceProvider,
+                customer);
+            var mainWindow = new MainWindow(vm);
+            mainWindow.Show();
 
             CloseCurrentWindow();
         }

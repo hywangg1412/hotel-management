@@ -1,8 +1,9 @@
 ﻿using FUMini.BussinessObjects.Models;
 using FUMini.Services.Interfaces;
-using FUMini.UI.View.Admin;
+using FUMini.UI.ViewModel.Admin;
 using FUMini.UI.ViewModel.Base;
 using FUMini.UI.ViewModel.User;
+using System;
 
 namespace FUMini.UI.ViewModel
 {
@@ -19,17 +20,24 @@ namespace FUMini.UI.ViewModel
         public UserDashboardViewModel UserDashboardVM { get; set; }
 
         public MainWindowViewModel(
-            bool isAdmin, 
+            bool isAdmin,
             ICustomerService customerService,
             IRoomInformationService roomInformationService,
             IRoomTypeService roomTypeService,
             IBookingReservationService bookingReservationService,
             IBookingDetailService bookingDetailService,
+            IServiceProvider serviceProvider,
             Customer? customer = null)
         {
             if (isAdmin)
             {
-                AdminDashboardVM = new AdminDashboardViewModel();
+                AdminDashboardVM = new AdminDashboardViewModel(
+                    customerService,
+                    roomInformationService,
+                    roomTypeService,
+                    bookingReservationService,
+                    bookingDetailService,
+                    serviceProvider);
                 CurrentView = AdminDashboardVM;
             }
             else
@@ -39,12 +47,13 @@ namespace FUMini.UI.ViewModel
                     throw new ArgumentNullException(nameof(customer), "Customer must not be null");
                 }
                 UserDashboardVM = new UserDashboardViewModel(
-                    customer, 
+                    customer,
                     customerService,
                     roomInformationService,
                     roomTypeService,
                     bookingReservationService,
-                    bookingDetailService);
+                    bookingDetailService,
+                    serviceProvider);
                 CurrentView = UserDashboardVM;
             }
         }

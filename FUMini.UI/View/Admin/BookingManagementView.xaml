@@ -5,8 +5,111 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:FUMini.UI.View.Admin"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#007acc" Padding="20,15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Booking Management" FontSize="24" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <Button Content="Refresh" Command="{Binding RefreshCommand}" Margin="20,0,0,0" Padding="15,8" Background="#005a9e" Foreground="White" BorderThickness="0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Booking List -->
+            <Border Grid.Column="0" Background="White" CornerRadius="8" Margin="0,0,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Search Bar -->
+                    <Border Grid.Row="0" Background="#f5f5f5" Padding="15" CornerRadius="8,8,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Search:" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="SemiBold"/>
+                            <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" 
+                                     Width="200" Padding="8,5" BorderThickness="1" BorderBrush="#ddd"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Booking DataGrid -->
+                    <DataGrid Grid.Row="1" 
+                              ItemsSource="{Binding Bookings}" 
+                              SelectedItem="{Binding SelectedBooking}"
+                              AutoGenerateColumns="False" 
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              IsReadOnly="True"
+                              GridLinesVisibility="Horizontal"
+                              HeadersVisibility="Column"
+                              AlternatingRowBackground="#f9f9f9">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding BookingReservationID}" Width="60"/>
+                            <DataGridTextColumn Header="Customer" Binding="{Binding Customer.CustomerFullName}" Width="150"/>
+                            <DataGridTextColumn Header="Booking Date" Binding="{Binding BookingDate, StringFormat=dd/MM/yyyy}" Width="120"/>
+                            <DataGridTextColumn Header="Total Price" Binding="{Binding TotalPrice, StringFormat=C}" Width="120"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding BookingStatus}" Width="100"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+
+            <!-- Action Panel -->
+            <Border Grid.Column="1" Background="White" CornerRadius="8" Margin="10,0,0,0">
+                <ScrollViewer>
+                    <StackPanel Margin="20">
+                        <TextBlock Text="Booking Actions" FontSize="18" FontWeight="Bold" Margin="0,0,0,20"/>
+
+                        <!-- Action Buttons -->
+                        <StackPanel>
+                            <Button Content="Update Status" Command="{Binding UpdateBookingStatusCommand}" 
+                                    Background="#ffc107" Foreground="Black" 
+                                    Padding="20,8" Margin="0,0,0,10" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                            
+                            <Button Content="Delete Booking" Command="{Binding DeleteBookingCommand}" 
+                                    Background="#dc3545" Foreground="White" 
+                                    Padding="20,8" Margin="0,0,0,10" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                            
+                            <Button Content="View Details" Command="{Binding ViewBookingDetailsCommand}" 
+                                    Background="#007acc" Foreground="White" 
+                                    Padding="20,8" Margin="0,0,0,20" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                        </StackPanel>
+
+                        <!-- Booking Details -->
+                        <TextBlock Text="Booking Details" FontSize="16" FontWeight="Bold" Margin="0,20,0,10"/>
+                        <DataGrid ItemsSource="{Binding BookingDetails}" 
+                                  AutoGenerateColumns="False" 
+                                  CanUserAddRows="False"
+                                  CanUserDeleteRows="False"
+                                  IsReadOnly="True"
+                                  GridLinesVisibility="Horizontal"
+                                  HeadersVisibility="Column"
+                                  MaxHeight="200">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Room" Binding="{Binding RoomInformation.RoomNumber}" Width="80"/>
+                                <DataGridTextColumn Header="Start Date" Binding="{Binding StartDate, StringFormat=dd/MM/yyyy}" Width="100"/>
+                                <DataGridTextColumn Header="End Date" Binding="{Binding EndDate, StringFormat=dd/MM/yyyy}" Width="100"/>
+                                <DataGridTextColumn Header="Price" Binding="{Binding ActualPrice, StringFormat=C}" Width="80"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
     </Grid>
 </UserControl>

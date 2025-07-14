@@ -5,8 +5,128 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:FUMini.UI.View.Admin"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#007acc" Padding="20,15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Customer Management" FontSize="24" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <Button Content="Refresh" Command="{Binding RefreshCommand}" Margin="20,0,0,0" Padding="15,8" Background="#005a9e" Foreground="White" BorderThickness="0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Customer List -->
+            <Border Grid.Column="0" Background="White" CornerRadius="8" Margin="0,0,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Search Bar -->
+                    <Border Grid.Row="0" Background="#f5f5f5" Padding="15" CornerRadius="8,8,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Search:" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="SemiBold"/>
+                            <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" 
+                                     Width="200" Padding="8,5" BorderThickness="1" BorderBrush="#ddd"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Customer DataGrid -->
+                    <DataGrid Grid.Row="1" 
+                              ItemsSource="{Binding Customers}" 
+                              SelectedItem="{Binding SelectedCustomer}"
+                              AutoGenerateColumns="False" 
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              IsReadOnly="True"
+                              GridLinesVisibility="Horizontal"
+                              HeadersVisibility="Column"
+                              AlternatingRowBackground="#f9f9f9">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding CustomerID}" Width="50"/>
+                            <DataGridTextColumn Header="Full Name" Binding="{Binding CustomerFullName}" Width="150"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding EmailAddress}" Width="180"/>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding Telephone}" Width="120"/>
+                            <DataGridTextColumn Header="Birthday" Binding="{Binding CustomerBirthday, StringFormat=dd/MM/yyyy}" Width="100"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding CustomerStatus}" Width="80"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+
+            <!-- Edit Panel -->
+            <Border Grid.Column="1" Background="White" CornerRadius="8" Margin="10,0,0,0">
+                <ScrollViewer>
+                    <StackPanel Margin="20">
+                        <TextBlock Text="Customer Details" FontSize="18" FontWeight="Bold" Margin="0,0,0,20"/>
+
+                        <!-- Edit Form -->
+                        <StackPanel>
+                            <TextBlock Text="Full Name:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingCustomer.CustomerFullName}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Email:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingCustomer.EmailAddress}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Phone:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingCustomer.Telephone}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Birthday:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <DatePicker SelectedDate="{Binding EditingCustomer.CustomerBirthday}" Margin="0,0,0,15" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Status:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <ComboBox SelectedValue="{Binding EditingCustomer.CustomerStatus}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}">
+                                <ComboBoxItem Content="Inactive" Tag="0"/>
+                                <ComboBoxItem Content="Active" Tag="1"/>
+                            </ComboBox>
+
+                            <TextBlock Text="Password:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <PasswordBox x:Name="PasswordBox" Margin="0,0,0,20" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <!-- Action Buttons -->
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Save" Command="{Binding SaveCommand}" 
+                                        Background="#28a745" Foreground="White" 
+                                        Padding="20,8" Margin="0,0,10,0" BorderThickness="0" 
+                                        IsEnabled="{Binding IsEditing}"/>
+                                <Button Content="Cancel" Command="{Binding CancelCommand}" 
+                                        Background="#6c757d" Foreground="White" 
+                                        Padding="20,8" BorderThickness="0" 
+                                        IsEnabled="{Binding IsEditing}"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <!-- View Mode Buttons -->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                            <Button Content="Add New" Command="{Binding AddCommand}" 
+                                    Background="#007acc" Foreground="White" 
+                                    Padding="20,8" Margin="0,0,10,0" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                            <Button Content="Edit" Command="{Binding EditCommand}" 
+                                    Background="#ffc107" Foreground="Black" 
+                                    Padding="20,8" Margin="0,0,10,0" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                            <Button Content="Delete" Command="{Binding DeleteCommand}" 
+                                    Background="#dc3545" Foreground="White" 
+                                    Padding="20,8" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
     </Grid>
 </UserControl>

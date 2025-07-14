@@ -1,12 +1,43 @@
 ﻿<UserControl x:Class="FUMini.UI.View.Admin.AdminDashboardView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:FUMini.UI.View.Admin"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             xmlns:adminvm="clr-namespace:FUMini.UI.ViewModel.Admin"
+             xmlns:adminview="clr-namespace:FUMini.UI.View.Admin">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type adminvm:CustomerManagementViewModel}">
+            <adminview:CustomerManagementView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type adminvm:RoomManagementViewModel}">
+            <adminview:RoomManagementView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type adminvm:BookingManagementViewModel}">
+            <adminview:BookingManagementView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type adminvm:ReportViewModel}">
+            <adminview:ReportView/>
+        </DataTemplate>
+    </UserControl.Resources>
+    <DockPanel LastChildFill="True" Background="#f4f7fb">
+        <!-- Sidebar/Menu -->
+        <StackPanel DockPanel.Dock="Left" Width="200" Background="#e0e7ef">
+            <TextBlock Text="Admin Panel" FontSize="20" FontWeight="Bold" Foreground="#007acc" Margin="20,24,0,32"/>
+            <Button Content="Customers" Command="{Binding ShowCustomerManagementCommand}" Margin="16,0,16,12" Height="44"/>
+            <Button Content="Rooms" Command="{Binding ShowRoomManagementCommand}" Margin="16,0,16,12" Height="44"/>
+            <Button Content="Bookings" Command="{Binding ShowBookingManagementCommand}" Margin="16,0,16,12" Height="44"/>
+            <Button Content="Reports" Command="{Binding ShowReportCommand}" Margin="16,0,16,12" Height="44"/>
             
-    </Grid>
+            <!-- Spacer to push logout to bottom -->
+            <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,20">
+                <Separator Margin="16,20,16,20" Background="#007acc"/>
+                <Button Content="Logout" Command="{Binding LogoutCommand}" 
+                        Margin="16,0,16,0" Height="44" 
+                        Background="#dc3545" Foreground="White" 
+                        BorderThickness="0" FontWeight="SemiBold"/>
+            </StackPanel>
+        </StackPanel>
+        <!-- Content Area -->
+        <Border Background="White" Padding="32" Margin="24,24,24,24" CornerRadius="16">
+            <ContentControl Content="{Binding CurrentAdminView}" />
+        </Border>
+    </DockPanel>
 </UserControl>

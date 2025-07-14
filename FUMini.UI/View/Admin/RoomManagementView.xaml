@@ -5,8 +5,135 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:FUMini.UI.View.Admin"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0" Background="#007acc" Padding="20,15">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Room Management" FontSize="24" FontWeight="Bold" Foreground="White" VerticalAlignment="Center"/>
+                <Button Content="Refresh" Command="{Binding RefreshCommand}" Margin="20,0,0,0" Padding="15,8" Background="#005a9e" Foreground="White" BorderThickness="0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Main Content -->
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Room List -->
+            <Border Grid.Column="0" Background="White" CornerRadius="8" Margin="0,0,10,0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Search Bar -->
+                    <Border Grid.Row="0" Background="#f5f5f5" Padding="15" CornerRadius="8,8,0,0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Search:" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="SemiBold"/>
+                            <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" 
+                                     Width="200" Padding="8,5" BorderThickness="1" BorderBrush="#ddd"/>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- Room DataGrid -->
+                    <DataGrid Grid.Row="1" 
+                              ItemsSource="{Binding Rooms}" 
+                              SelectedItem="{Binding SelectedRoom}"
+                              AutoGenerateColumns="False" 
+                              CanUserAddRows="False"
+                              CanUserDeleteRows="False"
+                              IsReadOnly="True"
+                              GridLinesVisibility="Horizontal"
+                              HeadersVisibility="Column"
+                              AlternatingRowBackground="#f9f9f9">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding RoomID}" Width="50"/>
+                            <DataGridTextColumn Header="Room Number" Binding="{Binding RoomNumber}" Width="120"/>
+                            <DataGridTextColumn Header="Type" Binding="{Binding RoomType.RoomTypeName}" Width="100"/>
+                            <DataGridTextColumn Header="Description" Binding="{Binding RoomDetailDescription}" Width="200"/>
+                            <DataGridTextColumn Header="Capacity" Binding="{Binding RoomMaxCapacity}" Width="80"/>
+                            <DataGridTextColumn Header="Price/Day" Binding="{Binding RoomPricePerDay, StringFormat=C}" Width="100"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding RoomStatus}" Width="80"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </Border>
+
+            <!-- Edit Panel -->
+            <Border Grid.Column="1" Background="White" CornerRadius="8" Margin="10,0,0,0">
+                <ScrollViewer>
+                    <StackPanel Margin="20">
+                        <TextBlock Text="Room Details" FontSize="18" FontWeight="Bold" Margin="0,0,0,20"/>
+
+                        <!-- Edit Form -->
+                        <StackPanel>
+                            <TextBlock Text="Room Number:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingRoom.RoomNumber}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Room Type:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <ComboBox ItemsSource="{Binding RoomTypes}" 
+                                      SelectedValue="{Binding EditingRoom.RoomTypeID}"
+                                      SelectedValuePath="RoomTypeID"
+                                      DisplayMemberPath="RoomTypeName"
+                                      Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Description:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingRoom.RoomDetailDescription}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Max Capacity:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingRoom.RoomMaxCapacity}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Price Per Day:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <TextBox Text="{Binding EditingRoom.RoomPricePerDay}" Margin="0,0,0,15" Padding="8,5" IsEnabled="{Binding IsEditing}"/>
+
+                            <TextBlock Text="Status:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+                            <ComboBox SelectedValue="{Binding EditingRoom.RoomStatus}" Margin="0,0,0,20" Padding="8,5" IsEnabled="{Binding IsEditing}">
+                                <ComboBoxItem Content="Unavailable" Tag="0"/>
+                                <ComboBoxItem Content="Available" Tag="1"/>
+                                <ComboBoxItem Content="Occupied" Tag="2"/>
+                                <ComboBoxItem Content="Maintenance" Tag="3"/>
+                            </ComboBox>
+
+                            <!-- Action Buttons -->
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                <Button Content="Save" Command="{Binding SaveCommand}" 
+                                        Background="#28a745" Foreground="White" 
+                                        Padding="20,8" Margin="0,0,10,0" BorderThickness="0" 
+                                        IsEnabled="{Binding IsEditing}"/>
+                                <Button Content="Cancel" Command="{Binding CancelCommand}" 
+                                        Background="#6c757d" Foreground="White" 
+                                        Padding="20,8" BorderThickness="0" 
+                                        IsEnabled="{Binding IsEditing}"/>
+                            </StackPanel>
+                        </StackPanel>
+
+                        <!-- View Mode Buttons -->
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                            <Button Content="Add New" Command="{Binding AddCommand}" 
+                                    Background="#007acc" Foreground="White" 
+                                    Padding="20,8" Margin="0,0,10,0" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                            <Button Content="Edit" Command="{Binding EditCommand}" 
+                                    Background="#ffc107" Foreground="Black" 
+                                    Padding="20,8" Margin="0,0,10,0" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                            <Button Content="Delete" Command="{Binding DeleteCommand}" 
+                                    Background="#dc3545" Foreground="White" 
+                                    Padding="20,8" BorderThickness="0" 
+                                    IsEnabled="{Binding IsNotEditing}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </Border>
+        </Grid>
     </Grid>
 </UserControl>

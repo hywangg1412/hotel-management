@@ -40,6 +40,14 @@
                     Command="{Binding ShowBookingHistoryCommand}"
                     Margin="10" Height="40"/>
             
+            <!-- Spacer to push logout to bottom -->
+            <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,20">
+                <Separator Margin="10,20,10,20" Background="#007acc"/>
+                <Button Content="Logout" Command="{Binding LogoutCommand}" 
+                        Margin="10,0,10,0" Height="40" 
+                        Background="#dc3545" Foreground="White" 
+                        BorderThickness="0" FontWeight="SemiBold"/>
+            </StackPanel>
         </StackPanel>
         <!-- Content Area -->
         <Border Background="White" Padding="24" Margin="16,0,0,0" CornerRadius="8">

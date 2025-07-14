@@ -1,12 +1,16 @@
 ﻿using FUMini.BussinessObjects.Models;
 using FUMini.Services.Interfaces;
 using FUMini.UI.ViewModel.Base;
+using Microsoft.Extensions.DependencyInjection;
+using System.Windows;
+using System;
 
 namespace FUMini.UI.ViewModel.User
 {
     public class UserDashboardViewModel : BaseViewModel
     {
         private object _currentUserView;
+        private readonly IServiceProvider _serviceProvider;
 
         public object CurrentUserView
         {
@@ -14,6 +18,8 @@ namespace FUMini.UI.ViewModel.User
             set { _currentUserView = value; OnPropertyChanged(); }
         }
         public ICustomerService _customerService { get; set; }
+
+        public event Action? RequestLogout;
 
         #region ViewModel
         public ProfileViewModel ProfileVM { get; set; }
@@ -27,6 +33,7 @@ namespace FUMini.UI.ViewModel.User
         public RelayCommand ShowBookingHistoryCommand { get; }
         public RelayCommand EditProfileCommand { get; }
         public RelayCommand ShowCreateBookingCommand { get; }
+        public RelayCommand LogoutCommand { get; }
         #endregion
 
         public UserDashboardViewModel(Customer customer,
@@ -34,16 +41,19 @@ namespace FUMini.UI.ViewModel.User
             IRoomInformationService RoomInformationService,
             IRoomTypeService RoomTypeService,
             IBookingReservationService BookingReservationService,
-            IBookingDetailService BookingDetailService)
+            IBookingDetailService BookingDetailService,
+            IServiceProvider serviceProvider)
         {
             _customerService = CustomerService;
+            _serviceProvider = serviceProvider;
+
             EditProfileCommand = new RelayCommand(OpenEditProfile);
             // Initialize VM
             ProfileVM = new ProfileViewModel(customer, EditProfileCommand);
             BookingHistoryVM = new BookingHistoryViewModel(
-                customer, 
-                BookingReservationService, 
-                BookingDetailService, 
+                customer,
+                BookingReservationService,
+                BookingDetailService,
                 RoomInformationService);
             CreateBookingVM = new CreateBookingViewModel(customer, RoomInformationService, RoomTypeService, BookingReservationService, BookingDetailService);
 
@@ -51,6 +61,7 @@ namespace FUMini.UI.ViewModel.User
             ShowProfileCommand = new RelayCommand(() => CurrentUserView = ProfileVM);
             ShowBookingHistoryCommand = new RelayCommand(() => CurrentUserView = BookingHistoryVM);
             ShowCreateBookingCommand = new RelayCommand(() => CurrentUserView = CreateBookingVM);
+            LogoutCommand = new RelayCommand(Logout);
 
             // Set Default View
             CurrentUserView = ProfileVM;
@@ -70,6 +81,17 @@ namespace FUMini.UI.ViewModel.User
             };
             CurrentUserView = updateVM;
             OnPropertyChanged(nameof(CurrentUserView));
+        }
+
+        private void Logout()
+        {
+            var result = MessageBox.Show("Are you sure you want to logout?", "Confirm Logout", 
+                MessageBoxButton.YesNo, MessageBoxImage.Question);
+            
+            if (result == MessageBoxResult.Yes)
+            {
+                RequestLogout?.Invoke();
+            }
         }
         #endregion
     }

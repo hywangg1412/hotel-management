@@ -12,10 +12,10 @@ namespace FUMini.UI.View
         public LoginWindow(
             ICustomerService customerService,
             AdminConfig adminConfig,
-            IServiceProvider serviceProvider) // Thêm parameter này
+            IServiceProvider serviceProvider)
         {
             InitializeComponent();
-            DataContext = new LoginViewModel(customerService, adminConfig, serviceProvider);
+            DataContext = serviceProvider.GetRequiredService<LoginViewModel>();
             PasswordBox.PasswordChanged += (s, e) =>
             {
                 var viewModel = DataContext as LoginViewModel;
